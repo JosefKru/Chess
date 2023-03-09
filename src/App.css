@@ -37,7 +37,7 @@
 }
 
 .white {
-  background-color: rgb(169, 169, 169);
+  background-color: rgb(200, 199, 199);
 }
 
 .selected {
@@ -48,5 +48,5 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: rgb(89, 203, 89);
+  background-color: rgb(21, 198, 21);
 }
