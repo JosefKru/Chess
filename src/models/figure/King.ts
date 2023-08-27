@@ -11,8 +11,13 @@ export class King extends Figure {
     this.name = FigureNames.KING
   }
 
-  canMove(targer: Cell): boolean {
-    if (!super.canMove(targer)) return false
-    return true
+  canMove(target: Cell): boolean {
+    if (!super.canMove(target)) return false
+
+    const dx = Math.abs(this.cell.x - target.x)
+    const dy = Math.abs(this.cell.y - target.y)
+
+    // Король может переместиться на соседнюю клетку по горизонтали, вертикали или диагонали
+    return dx <= 1 && dy <= 1
   }
 }
